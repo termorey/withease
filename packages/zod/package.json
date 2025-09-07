@@ -1,0 +1,49 @@
+{
+  "name": "@withease/zod",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "https://github.com/igorkamyshev/withease",
+  "scripts": {
+    "test:run": "vitest run --typecheck",
+    "build": "vite build",
+    "size": "size-limit",
+    "publint": "node ../../tools/publint.mjs",
+    "typelint": "attw --pack"
+  },
+  "peerDependencies": {
+    "@withease/contracts": "workspace:*",
+    "zod": "^3.25.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "@withease/contracts": "workspace:*",
+    "zod": "^3.25.0 || ^4.0.0"
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/zod.cjs",
+  "module": "./dist/zod.js",
+  "types": "./dist/zod.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/zod.d.ts",
+        "default": "./dist/zod.js"
+      },
+      "require": {
+        "types": "./dist/zod.d.cts",
+        "default": "./dist/zod.cjs"
+      }
+    }
+  },
+  "size-limit": [
+    {
+      "path": "./dist/zod.js",
+      "limit": "231 B"
+    }
+  ]
+}

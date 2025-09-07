@@ -114,6 +114,14 @@ importers:
   packages/web-api:
     specifiers: {}
 
+  packages/zod:
+    specifiers:
+      '@withease/contracts': workspace:*
+      zod: ^3.25.0 || ^4.0.0
+    devDependencies:
+      '@withease/contracts': link:../contracts
+      zod: 4.1.5
+
 packages:
 
   /@algolia/autocomplete-core/1.9.3_andexh5lxsyy34kfg3pekcyz5e:
@@ -4695,4 +4703,8 @@ packages:
       validator: 13.11.0
     optionalDependencies:
       commander: 9.5.0
+    dev: true
+
+  /zod/4.1.5:
+    resolution: {integrity: sha512-rcUUZqlLJgBC33IT3PNMgsCq6TzLQEG/Ei/KTCU0PedSWRMAXoOUN+4t/0H+Q8bdnLPdqUYnvboJT0bn/229qg==}
     dev: true
