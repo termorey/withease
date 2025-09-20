@@ -7,7 +7,7 @@ The best practice is to use a supported version of [Zod](https://zod.dev/). Pref
 You can use standard zod import.
 
 ```ts
-import { z } from "zod";
+import { z } from 'zod';
 import { zodContract } from '@withease/zod';
 ```
 
@@ -16,7 +16,7 @@ import { zodContract } from '@withease/zod';
 You still can use latest versions of zod@3 for migrations we support it.
 
 ```ts
-import { z } from "zod/v3";
+import { z } from 'zod/v3';
 import { zodContract } from '@withease/zod';
 ```
 
@@ -25,6 +25,6 @@ import { zodContract } from '@withease/zod';
 You can use adapter from [Farfetched](https://ff.effector/)
 
 ```ts
-import { z } from "zod";
+import { z } from 'zod';
 import { zodContract } from '@farfetched/zod';
 ```

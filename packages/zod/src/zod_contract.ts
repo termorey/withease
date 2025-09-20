@@ -1,4 +1,8 @@
-import { type ZodType as ZodTypeV3, type ZodError as ZodErrorV3, type TypeOf as TypeOfV3 } from 'zod/v3';
+import {
+  type ZodType as ZodTypeV3,
+  type ZodError as ZodErrorV3,
+  type TypeOf as TypeOfV3,
+} from 'zod/v3';
 import {
   type $ZodType as ZodTypeV4,
   type output as TypeOfV4,
@@ -13,10 +17,12 @@ type ZodAnyError = ZodErrorV3 | ZodErrorV4;
 type Output<T extends ZodAnyType> = T extends ZodTypeV4
   ? TypeOfV4<T>
   : T extends ZodTypeV3
-    ? TypeOfV3<T>
-    : never;
+  ? TypeOfV3<T>
+  : never;
 
-type ErrorTransformer = (issues: ZodAnyError) => ReturnType<Contract<unknown, unknown>['getErrorMessages']>;
+type ErrorTransformer = (
+  issues: ZodAnyError
+) => ReturnType<Contract<unknown, unknown>['getErrorMessages']>;
 
 function isZodV4(schema: unknown): schema is ZodTypeV4 {
   return !!schema && typeof schema === 'object' && '_zod' in schema;
@@ -27,7 +33,7 @@ const standardErrorTransformer: ErrorTransformer = (error) => {
     const path = e.path.join('.');
     return path !== '' ? `${e.message}, path: ${path}` : e.message;
   });
-}
+};
 
 /**
  * Transforms Zod contracts for `data` to internal Contract.

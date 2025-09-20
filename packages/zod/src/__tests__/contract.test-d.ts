@@ -41,7 +41,7 @@ describe('zodContract (zod v3)', () => {
             k: Set<string>;
           },
           'literal',
-          42,
+          42
         ]
       >();
 
@@ -55,7 +55,7 @@ describe('zodContract (zod v3)', () => {
             k: Set<string>;
           },
           'literal',
-          42,
+          42
         ]
       >();
     }
@@ -111,7 +111,7 @@ describe('zodContract (zod v4)', () => {
             k: Set<string>;
           },
           'literal',
-          42,
+          42
         ]
       >();
 
@@ -125,7 +125,7 @@ describe('zodContract (zod v4)', () => {
             k: Set<string>;
           },
           'literal',
-          42,
+          42
         ]
       >();
     }
@@ -181,7 +181,7 @@ describe('zodContract (zod v4-mini)', () => {
             k: Set<string>;
           },
           'literal',
-          42,
+          42
         ]
       >();
 
@@ -195,7 +195,7 @@ describe('zodContract (zod v4-mini)', () => {
             k: Set<string>;
           },
           'literal',
-          42,
+          42
         ]
       >();
     }

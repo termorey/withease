@@ -12,8 +12,8 @@ Adapter, initially created for [_Contracts_](/protocols/contract) that allows yo
 
 ```ts
 import { createQuery } from '@farfetched/core';
-import { z } from "zod";
-import { zodContract } from "@withease/zod";
+import { z } from 'zod';
+import { zodContract } from '@withease/zod';
 
 const CharacterSchema = z.object({
   id: z.string(),
@@ -29,8 +29,10 @@ const CharacterSchema = z.object({
 });
 
 const characterQuery = createQuery({
-  effect: createEffect(async (config: { id: number; }) => {
-    const response = await fetch(`https://rickandmortyapi.com/api/character/${config.id}`);
+  effect: createEffect(async (config: { id: number }) => {
+    const response = await fetch(
+      `https://rickandmortyapi.com/api/character/${config.id}`
+    );
     return response.json();
   }),
   // after receiving data from the server
@@ -42,6 +44,6 @@ const characterQuery = createQuery({
 
 ### Integration with other libraries
 
-Since *zodContract* (`@withease/zod`) is compatible [_Contract_](/protocols/contract) protocol it can be used with any library that supports it.
+Since _zodContract_ (`@withease/zod`) is compatible [_Contract_](/protocols/contract) protocol it can be used with any library that supports it.
 
 The full list of libraries that support _Contract_ protocol can be found [here](/protocols/contract).
