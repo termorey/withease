@@ -7,10 +7,5 @@
     "rootDir": "src",
     "baseUrl": "src"
   },
-  "include": ["src/**/*.ts"],
-  "references": [
-    {
-      "path": "../core"
-    }
-  ]
+  "include": ["src/**/*.ts"]
 }
