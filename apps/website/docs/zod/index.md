@@ -6,7 +6,7 @@ const maxSize = pkg['size-limit'].at(0).limit;
 
 # @withease/zod
 
-Small adapters (less than **{{maxSize}}** summary controlled by CI) for Zod package support.
+Small adapters (less than **{{maxSize}}** summary controlled by CI) for [Zod](https://zod.dev/) package support.
 
 ## Installation
 
@@ -36,4 +36,4 @@ But we understand the need to maintain a transitional versions to assist with mi
 
 ## API
 
-- [zodContract](api/contract)
+- [zodContract](./api/contract/)

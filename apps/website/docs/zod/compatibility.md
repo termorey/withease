@@ -1,6 +1,6 @@
 # Compatibility
 
-The best practice is to use a supported version of Zod. Preferably, opt for Zod@4. However, we recognize the need to support transitional versions to assist with migrations.
+The best practice is to use a supported version of [Zod](https://zod.dev/). Preferably, opt for Zod@4. However, we recognize the need to support transitional versions to assist with migrations.
 
 ## With zod@^4
 

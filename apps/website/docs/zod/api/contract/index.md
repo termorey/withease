@@ -4,7 +4,7 @@ Adapter, initially created for [_Contracts_](/protocols/contract) that allows yo
 
 ## Usage as a _Contract_
 
-`@withease/zod` is an adapter based on `@withease/contract` (used only [_Contract_ protocol](/protocol/contract) type) for full compatibility with Effector's ecosystem without additional interop. Just wrap your zod schema into adapter and use as usual [_Contract_](/protocols/contract).
+`@withease/zod` is an adapter based on `@withease/contract` (used only [_Contract_ protocol](/protocols/contract) type) for full compatibility with Effector's ecosystem without additional interop. Just wrap your zod schema into adapter and use as usual [_Contract_](/protocols/contract).
 
 ### Farfetched
 
