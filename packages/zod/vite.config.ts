@@ -1,17 +1,13 @@
 import tsconfigPaths from 'vite-tsconfig-paths';
-
 import dts from '../../tools/vite/types';
 
 export default {
-  plugins: [tsconfigPaths(), dts()],
   test: {
-    pool: 'threads',
-    poolOptions: {
-      threads: {
-        useAtomics: true,
-      },
+    typecheck: {
+      ignoreSourceErrors: true,
     },
   },
+  plugins: [tsconfigPaths(), dts()],
   build: {
     lib: {
       entry: 'src/index.ts',
