@@ -15,7 +15,7 @@ export default {
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: '@farfetched/zod',
+      name: '@withease/zod',
       fileName: 'zod',
       formats: ['es', 'cjs'],
     },
