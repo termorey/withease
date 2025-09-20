@@ -5,6 +5,7 @@
   "repository": "https://github.com/igorkamyshev/withease",
   "scripts": {
     "test:run": "vitest run --typecheck",
+    "test:watch": "vitest --typecheck",
     "build": "vite build",
     "size": "size-limit",
     "publint": "node ../../tools/publint.mjs",
