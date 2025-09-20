@@ -2,6 +2,11 @@
 
 Adapter, initially created for [_Contracts_](/protocols/contract) that allows you to introduce data validation of the application.
 
+::: warning
+Async schemas has not supported yet - related with [_Contracts protocol_](/protocols/contract) returned types:\
+Async schemas validation return Promise that can't be used with current [_Contracts protocol_](/protocols/contract)
+:::
+
 ## Usage as a _Contract_
 
 `@withease/zod` is an adapter based on `@withease/contract` (used only [_Contract_ protocol](/protocols/contract) type) for full compatibility with Effector's ecosystem without additional interop. Just wrap your zod schema into adapter and use as usual [_Contract_](/protocols/contract).
