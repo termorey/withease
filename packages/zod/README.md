@@ -1,3 +1,3 @@
 # @withease/zod
 
-Read documentation [here]().
+Read documentation [here](https://withease.effector.dev/zod/).
