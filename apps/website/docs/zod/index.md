@@ -15,7 +15,7 @@ First, you need to install package:
 ::: code-group
 
 ```sh [pnpm]
-pnpm install @withease/zod
+pnpm add @withease/zod
 ```
 
 ```sh [yarn]

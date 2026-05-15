@@ -22,7 +22,7 @@ import { zodContract } from '@withease/zod';
 
 ## Before zod@3.25.0
 
-You can use adapter from [Farfetched](https://ff.effector/)
+You can use adapter from [Farfetched](https://ff.effector.dev/)
 
 ```ts
 import { z } from 'zod';
